@@ -1,0 +1,7 @@
+#!/bin/bash
+
+module load bioinfo-tools
+
+module load SoapDenovo-v2.04
+
+soapdenovov2.04 soapdenovo.contig -R -o assembly_output_graph 1>ass.log 2>ass.err
