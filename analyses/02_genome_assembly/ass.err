@@ -6,7 +6,7 @@ Compile Nov 20 2013	12:17:30
 Pregraph
 ********************
 
-Parameters: pregraph -s soapdenovo.contig -K 127 -R -o assembly_output_graph 
+Parameters: pregraph -s soapdenovo.contig -K 127 -R -o output-files/assembly_output_graph 
 
 In soapdenovo.contig, 6 lib(s), maximum read length 100, maximum name length 256.
 
