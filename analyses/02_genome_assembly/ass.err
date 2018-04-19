@@ -1,17 +1,1 @@
-
-Version 2.04: released on July 13th, 2012
-Compile Nov 20 2013	12:17:30
-
-********************
-Pregraph
-********************
-
-Parameters: pregraph -s soapdenovo.contig -K 127 -R -o output-files/assembly_output_graph 
-
-In soapdenovo.contig, 6 lib(s), maximum read length 100, maximum name length 256.
-
-Ran out of memory while applying -30769224bytes
-There may be errors as follows:
-1) Not enough memory.
-2) The ARRAY may be overrode.
-3) The wild pointers.
+bash: SOAPdenovo-127mer: kommandot finns inte
