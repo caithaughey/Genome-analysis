@@ -7,11 +7,11 @@ avg_ins=9000
 #if sequence needs to be reversed
 reverse_seq=1
 #in which part(s) the reads are used
-asm_flags=3
+asm_flags=2
 #use only first 100 bps of each read
 rd_len_cutoff=100
 #in which order the reads are used while scaffolding
-rank=1
+rank=2
 # cutoff of pair number for a reliable connection (at least 5 for large insert size)
 pair_num_cut=5
 #minimum aligned length to contigs for a reliable read location (at least 35 for large insert size)
@@ -27,8 +27,8 @@ q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assem
 [LIB]
 avg_ins=5500
 reverse_seq=1
-asm_flags=3
-rank=1
+asm_flags=2
+rank=2
 pair_num_cut=5
 map_len=35
 q1=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819799.trim_1P.fastq.gz
@@ -39,34 +39,20 @@ q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assem
 [LIB]
 avg_ins=3000
 reverse_seq=1
-asm_flags=3
-rank=1
+asm_flags=2
+rank=2
 pair_num_cut=5
 map_len=35
 q1=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819798.trim_1P.fastq.gz
 q2=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819798.trim_2P.fastq.gz
 q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819798.trim_1U.fastq.gz
 q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819798.trim_2U.fastq.gz
-# Read SRR5819795
-[LIB]
-avg_ins=800
-reverse_seq=0
-asm_flags=3
-rank=2
-# cutoff of pair number for a reliable connection (at least 3 for short insert size)
-pair_num_cut=3
-#minimum aligned length to contigs for a reliable read location (at least 32 for short insert size)
-map_len=32
-q1=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819795.trim_1P.fastq.gz
-q2=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819795.trim_2P.fastq.gz
-q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819795.trim_1U.fastq.gz
-q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819795.trim_2U.fastq.gz
 # Read SRR5819794
 [LIB]
 avg_ins=400
 reverse_seq=0
 asm_flags=3
-rank=2
+rank=1
 pair_num_cut=3
 map_len=32
 q1=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819794.trim_1P.fastq.gz
@@ -78,7 +64,7 @@ q=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assem
 avg_ins=175
 reverse_seq=0
 asm_flags=3
-rank=2
+rank=1
 pair_num_cut=3
 map_len=32
 q1=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819797.trim_1P.fastq.gz

@@ -1,1 +1,25 @@
-bash: SOAPdenovo-127mer: kommandot finns inte
+
+Version 2.04: released on July 13th, 2012
+Compile Nov 20 2013	12:17:30
+
+********************
+Pregraph
+********************
+
+Parameters: pregraph -s soapdenovo.contig -K 49 -p 6 -o output-files/assembly_output_graph 
+
+In soapdenovo.contig, 5 lib(s), maximum read length 100, maximum name length 256.
+
+6 thread(s) initialized.
+Import reads from file:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819797.trim_1P.fastq.gz
+Import reads from file:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819797.trim_2P.fastq.gz
+Import reads from file:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819797.trim_1U.fastq.gz
+Import reads from file:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819797.trim_2U.fastq.gz
+Import reads from file:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819794.trim_1P.fastq.gz
+Import reads from file:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/02_genome_assembly/WGS_trimmed_data/sel3_SRR5819794.trim_2P.fastq.gz
