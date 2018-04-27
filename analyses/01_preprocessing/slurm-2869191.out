@@ -1,0 +1,16 @@
+	trimmomatic 0.36 loaded, see 'module help trimmomatic/0.36' for more information.
+Lmod has detected the following error: The following module(s) are unknown:
+"trimmomatric/0.36"
+
+Please check the spelling or version number. Also try "module spider ..."
+
+
+
+
+TrimmomaticPE: Started with arguments:
+ /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/RNA_raw_data/sel3_SRR1719013.1.fastq.gz /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/RNA_raw_data/sel3_SRR1719013.2.fastq.gz -baseout /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/sel3_RNA_trimmed.fq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Multiple cores found: Using 4 threads
+Using templated Output files: /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/sel3_RNA_trimmed_1P.fq.gz /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/sel3_RNA_trimmed_1U.fq.gz /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/sel3_RNA_trimmed_2P.fq.gz /home/caithaug/genome_analysis_course/Genome-analysis/analyses/01_preprocessing/sel3_RNA_trimmed_2U.fq.gz
+Quality encoding detected as phred33
+Input Read Pairs: 245215 Both Surviving: 230265 (93,90%) Forward Only Surviving: 12939 (5,28%) Reverse Only Surviving: 1092 (0,45%) Dropped: 919 (0,37%)
+TrimmomaticPE: Completed successfully
