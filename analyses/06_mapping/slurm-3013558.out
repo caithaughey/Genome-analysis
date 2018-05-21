@@ -1,0 +1,49 @@
+Before running with mpirun: export LD_PRELOAD=$MPI_ROOT/lib/libmpi.so
+Add the following option when using mpirun: -mca btl ^openib
+Before running with mpirun: export LD_PRELOAD=$MPI_ROOT/lib/libmpi.so
+Add the following option when using mpirun: -mca btl ^openib
+Lmod has detected the following error: The following module(s) are unknown:
+"bowtie/2.3.2"
+
+Please check the spelling or version number. Also try "module spider ..."
+
+
+
+
+
+[2018-05-08 12:04:03] Beginning TopHat run (v2.1.1)
+-----------------------------------------------
+[2018-05-08 12:04:03] Checking for Bowtie
+		  Bowtie version:	 2.3.2.0
+[2018-05-08 12:04:05] Checking for Bowtie index files (genome)..
+[2018-05-08 12:04:05] Checking for reference FASTA file
+	Warning: Could not find FASTA file sel3_NW_015504249.fa
+[2018-05-08 12:04:05] Reconstituting reference FASTA file from Bowtie index
+  Executing: /sw/apps/bioinfo/bowtie2/2.3.2/rackham/bin/bowtie2-inspect sel3_NW_015504249 > ./tophat_out/tmp/sel3_NW_015504249.fa
+[2018-05-08 12:04:06] Generating SAM header for sel3_NW_015504249
+[2018-05-08 12:04:08] Preparing reads
+	 left reads: min. length=36, max. length=100, 4757775 kept reads (377 discarded)
+	right reads: min. length=36, max. length=100, 4736405 kept reads (21747 discarded)
+[2018-05-08 12:07:42] Mapping left_kept_reads to genome sel3_NW_015504249 with Bowtie2 
+[2018-05-08 12:23:32] Mapping left_kept_reads_seg1 to genome sel3_NW_015504249 with Bowtie2 (1/4)
+[2018-05-08 12:25:58] Mapping left_kept_reads_seg2 to genome sel3_NW_015504249 with Bowtie2 (2/4)
+[2018-05-08 12:28:37] Mapping left_kept_reads_seg3 to genome sel3_NW_015504249 with Bowtie2 (3/4)
+[2018-05-08 12:31:22] Mapping left_kept_reads_seg4 to genome sel3_NW_015504249 with Bowtie2 (4/4)
+[2018-05-08 12:34:04] Mapping right_kept_reads to genome sel3_NW_015504249 with Bowtie2 
+[2018-05-08 12:46:03] Mapping right_kept_reads_seg1 to genome sel3_NW_015504249 with Bowtie2 (1/4)
+[2018-05-08 12:47:55] Mapping right_kept_reads_seg2 to genome sel3_NW_015504249 with Bowtie2 (2/4)
+[2018-05-08 12:49:57] Mapping right_kept_reads_seg3 to genome sel3_NW_015504249 with Bowtie2 (3/4)
+[2018-05-08 12:52:20] Mapping right_kept_reads_seg4 to genome sel3_NW_015504249 with Bowtie2 (4/4)
+[2018-05-08 12:54:33] Searching for junctions via segment mapping
+Traceback (most recent call last):
+  File "/sw/apps/bioinfo/tophat/2.1.1/rackham/bin/tophat", line 4107, in <module>
+    sys.exit(main())
+  File "/sw/apps/bioinfo/tophat/2.1.1/rackham/bin/tophat", line 4073, in main
+    user_supplied_deletions)
+  File "/sw/apps/bioinfo/tophat/2.1.1/rackham/bin/tophat", line 3634, in spliced_alignment
+    ref_fasta)
+  File "/sw/apps/bioinfo/tophat/2.1.1/rackham/bin/tophat", line 3121, in junctions_from_segments
+    die(fail_str+"Error: segment-based junction search failed with err ="+str(retcode)+"\n"+log_tail(log_fname))
+  File "/sw/apps/bioinfo/tophat/2.1.1/rackham/bin/tophat", line 1925, in log_tail
+    f=open(logfile, "r")
+IOError: [Errno 2] No such file or directory: './tophat_out/logs/segment_juncs.log'

@@ -1,0 +1,110 @@
+If MPI support is desired, load maker/3.01.2-beta-mpi instead
+If MPI support is desired, load maker/3.01.2-beta-mpi instead
+If MPI support is desired, load maker/3.01.2-beta-mpi instead
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "maker/3.01.2-beta"
+
+   Try: "module spider maker/3.01.2-beta" to see how to load the module(s).
+
+
+
+
+
+STATUS: Parsing control files...
+STATUS: Processing and indexing input FASTA files...
+STATUS: Setting up database for any GFF3 input...
+A data structure will be created for you at:
+/pica/h1/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore
+
+To access files for individual sequences use the datastore index:
+/pica/h1/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249_master_datastore_index.log
+
+STATUS: Now running MAKER...
+examining contents of the fasta file and run log
+
+
+
+--Next Contig--
+
+#---------------------------------------------------------------------
+Now starting the contig!!
+SeqID: NW_015504249.1
+Length: 3380749
+#---------------------------------------------------------------------
+
+
+setting up GFF3 output and fasta chunks
+doing repeat masking
+running  repeat masker.
+#--------- command -------------#
+Widget::RepeatMasker:
+cd /scratch/3000835/maker_qNwjk7; /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/RepeatMasker /pica/h1/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore/31/BC/NW_015504249.1//theVoid.NW_015504249.1/0/NW_015504249%2E1.0.all.rb -species all -dir /pica/h1/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore/31/BC/NW_015504249.1//theVoid.NW_015504249.1/0 -pa 1
+#-------------------------------#
+Can't locate Text/Soundex.pm in @INC (you may need to install the Text::Soundex module) (@INC contains: /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham /sw/comp/perl_modules/5.24.1/rackham/lib/perl5/5.24.1/x86_64-linux-thread-multi /sw/comp/perl_modules/5.24.1/rackham/lib/perl5/5.24.1 /sw/comp/perl_modules/5.24.1/rackham/lib/perl5/x86_64-linux-thread-multi /sw/comp/perl_modules/5.24.1/rackham/lib/perl5 /sw/comp/perl/5.24.1/rackham/lib/5.24.1/x86_64-linux-thread-multi /sw/comp/perl/5.24.1/rackham/lib/5.24.1 /sw/comp/perl/5.24.1/rackham/lib /sw/apps/bioinfo/tRNAscan-SE/1.3.1/rackham/bin /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5/5.24.1/x86_64-linux-thread-multi /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5/5.24.1 /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5/x86_64-linux-thread-multi /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5 /sw/comp/perl/5.24.1/rackham/lib/site_perl/5.24.1/x86_64-linux-thread-multi /sw/comp/perl/5.24.1/rackham/lib/site_perl/5.24.1 .) at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/Taxonomy.pm line 83.
+BEGIN failed--compilation aborted at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/Taxonomy.pm line 83.
+Compilation failed in require at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/RepeatMasker line 313.
+BEGIN failed--compilation aborted at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/RepeatMasker line 313.
+ERROR: RepeatMasker failed
+--> rank=NA, hostname=r440.uppmax.uu.se
+ERROR: Failed while doing repeat masking
+ERROR: Chunk failed at level:0, tier_type:1
+FAILED CONTIG:NW_015504249.1
+
+ERROR: Chunk failed at level:2, tier_type:0
+FAILED CONTIG:NW_015504249.1
+
+examining contents of the fasta file and run log
+
+
+
+--Next Contig--
+
+Processing run.log file...
+MAKER WARNING: The file sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore/31/BC/NW_015504249.1//theVoid.NW_015504249.1/0/NW_015504249%2E1.0.all.rb.out
+did not finish on the last run and must be erased
+#---------------------------------------------------------------------
+Now retrying the contig!!
+SeqID: NW_015504249.1
+Length: 3380749
+Tries: 2!!
+#---------------------------------------------------------------------
+
+
+setting up GFF3 output and fasta chunks
+doing repeat masking
+running  repeat masker.
+#--------- command -------------#
+Widget::RepeatMasker:
+cd /scratch/3000835/maker_qNwjk7; /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/RepeatMasker /pica/h1/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore/31/BC/NW_015504249.1//theVoid.NW_015504249.1/0/NW_015504249%2E1.0.all.rb -species all -dir /pica/h1/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore/31/BC/NW_015504249.1//theVoid.NW_015504249.1/0 -pa 1
+#-------------------------------#
+Can't locate Text/Soundex.pm in @INC (you may need to install the Text::Soundex module) (@INC contains: /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham /sw/comp/perl_modules/5.24.1/rackham/lib/perl5/5.24.1/x86_64-linux-thread-multi /sw/comp/perl_modules/5.24.1/rackham/lib/perl5/5.24.1 /sw/comp/perl_modules/5.24.1/rackham/lib/perl5/x86_64-linux-thread-multi /sw/comp/perl_modules/5.24.1/rackham/lib/perl5 /sw/comp/perl/5.24.1/rackham/lib/5.24.1/x86_64-linux-thread-multi /sw/comp/perl/5.24.1/rackham/lib/5.24.1 /sw/comp/perl/5.24.1/rackham/lib /sw/apps/bioinfo/tRNAscan-SE/1.3.1/rackham/bin /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5/5.24.1/x86_64-linux-thread-multi /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5/5.24.1 /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5/x86_64-linux-thread-multi /sw/apps/bioinfo/BioPerl/1.7.1_Perl5.24.1/rackham/lib/perl5 /sw/comp/perl/5.24.1/rackham/lib/site_perl/5.24.1/x86_64-linux-thread-multi /sw/comp/perl/5.24.1/rackham/lib/site_perl/5.24.1 .) at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/Taxonomy.pm line 83.
+BEGIN failed--compilation aborted at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/Taxonomy.pm line 83.
+Compilation failed in require at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/RepeatMasker line 313.
+BEGIN failed--compilation aborted at /sw/apps/bioinfo/RepeatMasker/4.0.7/rackham/RepeatMasker line 313.
+ERROR: RepeatMasker failed
+--> rank=NA, hostname=r440.uppmax.uu.se
+ERROR: Failed while doing repeat masking
+ERROR: Chunk failed at level:0, tier_type:1
+FAILED CONTIG:NW_015504249.1
+
+ERROR: Chunk failed at level:2, tier_type:0
+FAILED CONTIG:NW_015504249.1
+
+examining contents of the fasta file and run log
+
+
+
+--Next Contig--
+
+Processing run.log file...
+MAKER WARNING: The file sel3_NW_015504249.maker.output/sel3_NW_015504249_datastore/31/BC/NW_015504249.1//theVoid.NW_015504249.1/0/NW_015504249%2E1.0.all.rb.out
+did not finish on the last run and must be erased
+
+
+Maker is now finished!!!
+
+
+
+Start_time: 1525712626
+End_time:   1525712641
+Elapsed:    15

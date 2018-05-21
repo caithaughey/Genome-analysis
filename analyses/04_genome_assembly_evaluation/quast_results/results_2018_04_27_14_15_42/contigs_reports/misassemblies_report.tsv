@@ -1,0 +1,14 @@
+Assembly	assembly_output_graph
+# misassemblies	2
+    # relocations	2
+    # translocations	0
+    # inversions	0
+# misassembled contigs	2
+Misassembled contigs length	11980
+# local misassemblies	9
+# unaligned mis. contigs	0
+# mismatches	813
+# indels	38
+    # indels (<= 5 bp)	30
+    # indels (> 5 bp)	8
+Indels length	452

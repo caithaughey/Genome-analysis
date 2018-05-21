@@ -1,0 +1,37 @@
+#!/bin/bash -l
+
+#SBATCH -A g2018003
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 10:00:00
+#SBATCH -J htseq_run
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user caitlinvigetun@hotmail.com
+
+module load bioinfo-tools
+module load samtools
+module load htseq
+
+dir=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/06_mapping/tophat_split
+out=/home/caithaug/genome_analysis_course/Genome-analysis/analyses/08_differential_expression
+
+for sample in $dir/*
+
+do
+
+sample=$(basename $sample)
+
+echo $sample
+
+samtools sort -n -O BAM -@ 4 -o $dir/$sample/${sample}_sorted-name.bam $dir/$sample/accepted_hits.bam
+
+mkdir ${out}/${sample}
+
+htseq-count -f bam -r name -s no -i ID \
+${dir}/${sample}/${sample}_sorted-name.bam \
+/home/caithaug/genome_analysis_course/Genome-analysis/analyses/05_genome_annotation/Maker_Round1/sel3_NW_015504249.maker.output/sel3_NW_015504249.gff \
+> ${out}/${sample}/${sample}_counts.txt
+
+done
+ 
+ 
