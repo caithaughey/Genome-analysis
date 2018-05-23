@@ -1,0 +1,1 @@
+ls RNA_trimmed_data/*1P.fastq.gz | while read left ;do echo $left; right=$(echo $left | sed 's/1P.fastq.gz$/2P.fastq.gz/'); echo $right; output=$(basename $left | sed 's/.trim_1P.fastq.gz$//;s,^,tophat_split/,'); echo $output; tophat -o $output -p 2 sel3_NW_015504249.fna $left $right ;done

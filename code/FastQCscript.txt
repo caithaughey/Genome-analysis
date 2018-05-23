@@ -1,0 +1,15 @@
+#!/bin/bash
+
+module load bioinfo-tools
+
+module load FastQC
+
+fastqc /RNA_raw_data/"insert file name here".fastq
+
+cd "insert file name here".fastqc
+
+cat summary.txt
+
+# Run in GUI Mode by starting fastqc as follows:
+
+fastqc &

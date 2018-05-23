@@ -1,0 +1,4 @@
+egrep -n -m 1 '##FASTA' sel3_NW_015504249.all.gff
+wc -l sel3_NW_015504249.all.gff | awk '{print $1}'
+head -n 23937 sel3_NW_015504249.all.gff > test.gff
+test.gff > sel3_NW_015504249.gff
